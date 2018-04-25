@@ -1,0 +1,8 @@
+{ "homepage": "https://github.com/GlenSearle" }
+{ "license" : "SEE LICENSE IN <filename>" }
+{ "name" : "iGlen Searle"
+, "email" : "glen.searle@gmail.com"
+, "url" : "http://GenesisMachines.co.uk/"}
+{ "description": "This makes an Ethereum test enviroment"}
+{ "repository": "https://github.com/GlenSearle" }
+{ "README" : "SEE README IN <filename>" }

@@ -4,7 +4,7 @@ RUN apk add --update git
 
 RUN git clone https://github.com/cubedro/eth-netstats
 
-WORKDIR /eth-netstats
+WORKDIR /ethereum-netstat
 
 RUN npm install
 RUN npm install -g grunt-cli
