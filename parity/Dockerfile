@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-WORKDIR /build
+#WORKDIR /build
 
 # install tools and dependencies
 RUN apt-get update && \
@@ -30,13 +30,15 @@ gcc -v &&\
 g++ -v
 
 # build parity
-ADD . /build/parity
-RUN cd parity && \
+#ADD . /build/parity
+RUN cd / && \
+    git clone https://github.com/paritytech/parity && \
+        cd parity/parity && \
         cargo build --release --verbose && \
-        ls /build/parity/target/release/parity && \
-        strip /build/parity/target/release/parity
+        ls /parity/parity/target/release/parity && \
+        strip /parity/parity/target/release/parity
 
-RUN file /build/parity/target/release/parity
+RUN file /parity/parity/target/release/parity
 
 EXPOSE 8080 8545 8180
-ENTRYPOINT ["/build/parity/target/release/parity"]
+ENTRYPOINT ["/parity/parity/target/release/parity"]

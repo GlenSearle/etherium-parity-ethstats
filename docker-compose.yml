@@ -41,3 +41,13 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "3000:3000"
+  netstats:
+    build: parity
+    restart: on-failure
+    container_name: parity
+    environment:
+      - WS_SECRET=eth-net-stats-secret
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "8080:8080"
