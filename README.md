@@ -1,9 +1,9 @@
-## etherium-parity-ethstats#
+## ethereum-parity-ethstats#
 
-This builds a containerised, self contained, Etherium network.
+This builds a containerised, self contained, Ethereum network.
 
 This netowrk consists of:
-> three Etherium nodes.
+> three Ethereum nodes.
 > Parity built from the latest release
 > eth-netstat for the monitoring
 
@@ -13,12 +13,12 @@ This netowrk consists of:
 
 
 
-Etherium has an officual docker image on Dockerhub called [ethereum/client-go](https://github.com/ethereum/go-ethereum/)
+Ethereum has an officual docker image on Dockerhub called [ethereum/client-go](https://github.com/ethereum/go-ethereum/)
 ```
 FROM ethereum/client-go
 ```
 
-[Etherium-netstat](https://github.com/cubedro/eth-netstats) is written by Cubedro, who doesn't have an officual Docker image.
+[Ethereum-netstat](https://github.com/cubedro/eth-netstats) is written by Cubedro, who doesn't have an officual Docker image.
 ```
 apt-get update
 apt-get install npm git
